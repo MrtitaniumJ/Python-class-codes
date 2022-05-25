@@ -1,0 +1,109 @@
+# 1. WAP to print two different strings "Hello" and "World" in different lines.
+#print("Hello\nWorld")
+
+# 2. WAP to print two different strings "Hello" and "World" in a single line.
+#print("Hello World")
+
+# 3, 4, 5. WAP to add, subtract, multiply two entered integer values.
+'''a=int(input("Enter a integer number: "))
+b=int(input("Enter another integer number: "))
+c=a+b
+d=a-b
+e=a*b
+print(f"The sum of {a} and {b} is {c}.\nThe subtraction of {a} and {b} is {d}.\nThe multiply of {a} and {b} is {e}.")'''
+
+# 6. WAP to input two integer values and calculate first number raised to the power second number.
+'''a=int(input("Enter the power: "))
+b=int(input("Enter the base: "))
+c=b**a
+print(f"{b} raised to power {a} is {c}.")'''
+
+# 7. WAP to find the area and perimeter of a rectangle, when the requires input (Length and breadth) are entered by the user.
+'''l=eval(input("Enter the Lentgh: "))
+b=eval(input("Enter the Breadth: "))
+a=l*b
+p=(l+b)*2
+print(f"The area of the Rectangle: {a}\nPerimeter: {p}")'''
+
+# 8. WAP to find the area and circumference of a circle, when the radius is entered by the user. However, the user can input radius in integer or float.
+'''r=eval(input("Enter the radius: "))
+a=(r**2)*(22/7)
+c=2*(22/7)*r
+print(f"Area = {a}\nCircumference = {c}")'''
+
+# 9. WAP to find the hypotanuse of a right angled triangle, when the base and height are entered by the user.
+'''h=eval(input("Enter the Height: "))
+b=eval(input("Enter the Base: "))
+hy=((h**2)+(b**2))**0.5
+print(f"Hypotanuse = {hy}")'''
+
+# 10. WAP to input two numbers and print the swapped values of them.
+'''from calendar import c
+
+
+a=eval(input("Enter a number (a): "))
+b=eval(input("Enter another number (b): "))
+c=a
+a=b
+b=c
+print(f"After swapping of a = {a}")
+print(f"After swapping of b = {b}")'''
+
+# 11. WAP to find the number of currency notes of each type (Rs. 2000, Rs. 500 and rs. 100), when the total number of currency notes counted altogether is minimum and there must be at least a 100 rupee note dipensed. 
+'''inr=int(input("Enter the money to Withdraw: "))
+tt = 0
+fh = 0
+h = 1
+inr = inr -100
+tt = (inr)//2000
+inr = inr%2000
+fh = inr//500
+inr = inr % 500
+h = inr//100 + 1
+print(tt,fh,h)'''
+
+# 12. WAP to find whether a triangle is scalene, isosceles, right angled or invalid when the sides of the triangle are entered by the user.
+'''a=int(input("Enter first side of the triangle: "))
+b=int(input("Enter second side of the triangle: "))
+c=int(input("Enter third side of the triangle: "))
+if(a==b or b==c or c==a):
+        print("Isoscles triangle")
+elif((a**2)+(b**2)==c**2 or (b**2)+(c**2)==a**2 or (c**2)+(a**2)==b**2):
+        print("Right angled triangle")
+elif((a+b)<c or (b+c)<a or (c+a)<b):
+        print("Invalid Triangle")
+else:
+        print("Scalene triangle")'''
+
+# 13, 14. WAP to find Simple and Compound Interest Rate and the total amount when the Principal, Rate of Interest and time are entered by the user.
+'''p=eval(input("Enter the Principal Balance: "))
+r=eval(input("Enter the Rate of Interest: "))
+t=eval(input("Enter the Time: "))
+si=(p*r*t)/100
+ac=p*((1+(r/100))**t)
+ci=ac-p
+a=p*(1+r*t)
+print(f"Simple Interest Rate = {si}\nTotal Amount for Simple Interest Rate = {a}\nCompound Interest Rate = {ci}\nTotal Amount for Compound Interest Rate = {ac}")'''
+
+# 15. WAP to calculates the number of rectangular tiles required to cover a rectangular floor if the dimensions of the floor and the dimensions of a tile are entered by the user.
+'''l1=eval(input("Enter Length of the Floor: "))
+l2=eval(input("Enter Length of the tile: "))
+b1=eval(input("Enter Breadth of the Floor: "))
+b2=eval(input("Enter Breadth of the tile: "))
+number_of_tiles=(l1*b1)//(l2*b2)
+print(f"The numbers of tiles reequireed to cover the floor is {number_of_tiles}.")'''
+
+
+# 16. WAP to input the number of overs in a cricket match and output the maximum runs a player can score in the match. Assume that there are no extra runs or NO balls in the match played. For example, in a 50 over match, the maximum runs scord are 1653.
+'''o=int(input("Enter overs: "))
+r=3*(o-1)+(o*5*6)+6
+print(f"Maximum Run = {r}")'''
+
+# 17. WAP to input the numbers of heads and feet in a farm and identify the number of chickens and goats in the farm. For example, if there are 340 heads and 1060 feet, there are 150 chickens and 190 goats.
+'''h=int(input("Enter the total heads: "))
+f=int(input("Enter the total feet: "))
+g=(f-2*h)//2
+c=h-g
+print(f"Number of chickens = {c}\nNumber of Goats = {g}")'''
+
+# 18. WAP to input the numbers of heaads and feets in a farm and identify then number of chickens and goats in the faram.

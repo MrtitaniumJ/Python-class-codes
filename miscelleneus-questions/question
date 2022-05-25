@@ -1,1 +1,31 @@
-7
+# 1. Ek test file ke andar kuch string likhi huyi hai....Chek krna hai ki uss string ke andar kitne letters capital mei hai..
+
+
+# 2. Ek file mei user se word enter krake search krna hai ki wo word file mei hai ya nhi..
+# 3. Ek file mei car no., carname, average enter hai.. 
+s = int(input("Input string: "))
+f = open("abcdef.txt",'a+')
+for i in range(s):
+    f.write(input())
+    f.write("\n")
+'''f.write(input())'''
+f.seek(0, 0)
+t = list
+print(t)
+f.close()
+
+# 4. Let suppose jitne record 3rd question ke acc hai to no. of line btani hai ki total no. of lines kitni hai uss file ke andar 
+# 5. Usme words kitne hai
+
+# 6. Usme letters kitne hai
+g= open("abc.txt","r")
+s=g.read()
+k=0
+lines = s.count('\n')
+words=s.count(' ')
+for i in s:
+    k = k+1
+print("Sentences in file :")
+# 7. Ek file ke nadar kuch data hai.. to usme 'to' and 'the' kitni baar aayega string mei... agar ye dono uppar case mei hai to lower case krke count nikalna hai.. 
+
+

@@ -1,0 +1,7 @@
+f = open("data.txt", "r")
+d = f.read()
+d = d.replace('a', '@')
+f.close()
+f=open("data.txt", "w")
+f.write(d)
+f.close()
